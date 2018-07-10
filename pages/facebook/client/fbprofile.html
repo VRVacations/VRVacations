@@ -1,0 +1,37 @@
+<template name="fbprofile">
+  <h1>Mini-FB Profile</h1>
+  {{#if currentUser}}
+    {{> fbinfo user=user}}
+  {{else}}
+  You have to log in to access this page
+  {{/if}}
+
+
+</template>
+
+<template name="fbinfo">
+  Your Full Name:
+    <input type="text" id="js-name" value="{{user.name}}">
+    <br>
+    Your Birthdate:
+    <input type="date" id="js-bday" value="{{user.bday}}">
+    <br>
+    Your Gender:
+    <select id="js-gender">
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+    <br>
+    Let Everyone see my Profile:
+    <select id="js-public">
+      <option>Yes</option>
+      <option>No</option>
+
+    </select>
+    <br>
+    Place of Birth:
+    <input type="text" id="js-birthplace" value="{{user.birthplace}}">
+    <br>
+    <button id="js-submit" class="btn btn-info">Update Profile</button>
+</template>
