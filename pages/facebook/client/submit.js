@@ -1,4 +1,4 @@
-Template.fbmakepost.events({
+Template.submit.events({
   "click #submit"(event, instance){
     var profile = Profiles.findOne({owner:Meteor.userId()});
     var now = new Date();
