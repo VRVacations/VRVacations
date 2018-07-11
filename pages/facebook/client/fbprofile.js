@@ -1,15 +1,7 @@
 Template.fbinfo.helpers({
-  user(){
-    var theProfile = Profiles.findOne({owner:Meteor.userId()});
-    if (!theProfile){
-      var k = Profiles.find().count();
-      Profiles.insert({name:"anonymous"+k,owner:Meteor.userId()});
-    } else {
-    return theProfile
-    }
-   },
-
-
+  user: function(){
+    return Profiles.findOne({owner:Meteor.userId()})
+  }
 })
 
 
