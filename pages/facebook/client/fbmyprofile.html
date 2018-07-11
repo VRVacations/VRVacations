@@ -1,0 +1,8 @@
+<template name="fbmyprofile">
+  <h1>Mini-FB Profile</h1>
+  {{#if currentUser}}
+    {{> fbinfo user=user}}
+  {{else}}
+  You have to log in to access this page
+  {{/if}}
+</template>
