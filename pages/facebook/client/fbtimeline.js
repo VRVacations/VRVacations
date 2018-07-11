@@ -8,18 +8,3 @@ Template.fbtimeline.helpers({
   }
 })
 
-Template.fbmakepost.events({
-  "click #submit"(event, instance){
-    var profile = Profiles.findOne({owner:Meteor.userId()});
-    var now = new Date();
-    var text = instance.$("#fb-posttext").val();
-    var post = {
-      owner:Meteor.userId(),
-      name:profile.name,
-      createdAt: now,
-      text: text
-    };
-    console.dir(post);
-    Posts.insert(post);
-  }
-})
