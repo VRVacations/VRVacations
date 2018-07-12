@@ -2,11 +2,14 @@
 
 Meteor.methods({
 
-  getInfo: function(){
-    const z = Meteor.user();
+  getInfo: function(userName){
+    console.log(userName)
+
+
+
     Connections.remove({localIP:this.connection.clientAddress});
     Connections.insert(
-      {userName:z.profile.name,localIP:this.connection.clientAddress,createdAt:(new Date())});
+      {userName:userName,localIP:this.connection.clientAddress,createdAt:(new Date())});
     return this.connection.clientAddress;
-  }
+    }
 })

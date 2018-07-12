@@ -9,7 +9,7 @@ Template.userList.helpers({
   'connect': function() {
     console.log("finding connections!");
     const z = Connections.find();
-    zz = Meteor.call("getInfo",[]);
+    z = Meteor.call("getInfo",[]);
     console.log("myIP= "+zz);
 
     console.log("**** connections = "+JSON.stringify(z.fetch()));
@@ -20,7 +20,9 @@ Template.userList.helpers({
 Template.userList.events({
   'click .add-me-js': function(){
     console.log("clicked!");
-    Meteor.call("getInfo");
+    var profile = Profiles.findOne({owner:Meteor.userId()})
+    Meteor.call("getInfo", profile.name);
+
   },
 
   'click .js-remove-all': function(event){
