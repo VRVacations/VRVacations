@@ -1,11 +1,28 @@
 <template name="submit">
-  <textarea id="fb-posttext" cols="100%" rows="5" placeholder="What is your status?">
-  </textarea>
-  <textarea id="fb-postloc" cols="100%" rows="5" placeholder="What is your status?">
-  </textarea>
-  <textarea id="fb-postname" cols="100%" rows="5" placeholder="What is your status?">
-  </textarea>
-  <textarea id="fb-posttitle" cols="100%" rows="5" placeholder="What is your status?">
-  </textarea>
+<h1>Share your own VR vacation!</h1>
+
+<table class="table table-bordered">
+	<thead>
+		<tr><th>Your Title</th><th>Your Description</th><th>Your Location</th><th>Your Name</th></tr>
+	</thead>
+	<tbody>
+    <th>
+    <textarea id="fb-posttitle" cols="25%" rows="1" placeholder="What is your status?">
+    </textarea>
+    </th><th>
+    <textarea id="fb-postname" cols="25%" rows="1" placeholder="What is your status?">
+    </textarea>
+    </th><th>
+    <textarea id="fb-posttext" cols="25%" rows="1" placeholder="What is your status?">
+    </textarea>
+    </th><th>
+    <textarea id="fb-postloc" cols="25%" rows="1" placeholder="What is your status?">
+    </textarea>
+    </th>
+	</tbody>
+</table>
+
+
+
   <button id="submit" class="btn btn-small btn-info">Post status</button>
 </template>
