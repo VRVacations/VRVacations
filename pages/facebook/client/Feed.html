@@ -12,9 +12,11 @@
   <div class="fb-post">
     {{p.createdAt}}<br>
     {{p.name}}<br>
-    {{p.text}}<br>
     {{p.location}}<br>
-    {{p.title}}<br>
-    {{p.filename}}<br>
+    <img src={{p.filename}} alt={{p.filename}}>
+    <h4>{{p.title}}</h4>
+    <br>
+    {{p.text}}<br>
+
   </div>
   </template>
