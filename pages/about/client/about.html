@@ -13,9 +13,13 @@ body {
 <br>
 <h3 class="bg-info"><strong>Meet Our Team</strong></h3>
 <table class="table table-bordered table-hover">
-	<thead-dark>
-		<tr><th>Name</th><th>Email</th><th>Location</th></tr>
-	</thead-dark>
+	<thead class="thead-light">
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Email</th>
+			<th scope="col">Location</th>
+		</tr>
+	</thead>
 	<tbody>
 		{{#each person in team}}
   		{{> teamrow t=person}}
