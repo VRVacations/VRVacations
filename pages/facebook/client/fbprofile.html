@@ -16,6 +16,11 @@
     Your Birthdate:
     <input type="date" id="js-bday" value="{{user.bday}}">
     <br>
+    Birthplace:
+    <input type="text" id="js-birthplace" value="{{user.birthplace}}">
+    <br>
+    <button id="js-submit" class="btn btn-info">Update Profile</button>
+    <br>
     Your Gender:
     <select id="js-gender">
       <option></option>
@@ -26,15 +31,12 @@
     <br>
     Let Everyone see my Profile:
     <select id="js-public">
+      <option></option>
       <option>Yes</option>
       <option>No</option>
 
     </select>
     <br>
-    Birthplace:
-    <input type="text" id="js-birthplace" value="{{user.birthplace}}">
-    <br>
-    <button id="js-submit" class="btn btn-info">Update Profile</button>
-    <br>
+
     <a href="{{pathFor 'fbmyprofile'}}"><button class="btn btn-info">Go Back</button></a>
 </template>

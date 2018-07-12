@@ -21,17 +21,19 @@ Template.fbinfo.events({
     console.log('just read '+name);
     const bday = instance.$('#js-bday').val();
     console.log('just read '+bday);
+    const birthplace = instance.$('#js-birthplace').val();
+    console.log('just read '+birthplace);
     const gender = instance.$('#js-gender').val();
     console.log('just read '+gender);
     const public = instance.$('#js-public').val();
     console.log('just read '+public);
-    const birthplace = instance.$('#js-birthplace').val();
-    console.log('just read '+birthplace);
+
     theProfile.name = name;
     theProfile.bday = bday;
+    theProfile.birthplace = birthplace;
     theProfile.gender = gender;
     theProfile.public = public;
-    theProfile.birthplace = birthplace;
+  
     Profiles.update(theProfile._id,theProfile);
   }
 })
