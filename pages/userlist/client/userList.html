@@ -4,7 +4,7 @@
   <ol>
     {{#each connection in connections}}
     <li> <a href="http://{{connection.localIP}}:3000">
-      {{connection.userName}} at {{connection.localIP}}
+      {{connection.theProfile}} at {{connection.localIP}}
     </a></li>
     {{/each}}
   </ol>
