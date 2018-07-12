@@ -2,14 +2,24 @@
 	<style>
 body {
     background-color: white;}
+		tr:nth-child(even) {background-color: #f2f2f2;}
 </style>
 
-<h1>About</h1>
-
-Here is our team:
-<table class="table table-bordered">
-	<thead>
-		<tr><th>Name</th><th>Email</th></tr>
+<h1><strong>About</strong></h1>
+<h3 class="bg-info"><strong>What is Virtual Reality?</strong></h3>
+<h4 class="text-info">Answer</h4>
+<br>
+<h3 class="bg-info"><strong>What We Do</strong></h3>
+<h4 class="text-info"><sp>We are a media application utilizing the revolutionary features of Virtual Reality in order to bring the experiences to you! Rather than viewing pictures and videos, you can now immerse yourself within the experience of high adrenaline activities without the risks or basking in the views of the Northern Lights, all at no extra cost!</sp></h4>
+<br>
+<h3 class="bg-info"><strong>Meet Our Team</strong></h3>
+<table class="table table-bordered table-hover">
+	<thead class="thead-light">
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Email</th>
+			<th scope="col">Location</th>
+		</tr>
 	</thead>
 	<tbody>
 		{{#each person in team}}
@@ -25,5 +35,6 @@ Here is our team:
    <tr>
    	  <td>{{t.name}}</td>
    	  <td>{{t.email}}</td>
+			<td>{{t.location}}</td>
    </tr>
 </template>
