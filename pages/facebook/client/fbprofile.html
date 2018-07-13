@@ -21,17 +21,17 @@
     <br>
     Your Gender:
     <select id="js-gender">
-      <option></option>
-      <option>Male</option>
-      <option>Female</option>
-      <option>Other</option>
+      <option {{isSelected user.gender 'null'}} value="null"></option>
+      <option {{isSelected user.gender 'male'}}  value="male">Male</option>
+      <option {{isSelected user.gender 'female'}} value="female">Female</option>
+      <option {{isSelected user.gender 'other'}} value="other">Other</option>
     </select>
     <br>
     Let Everyone see my Profile:
     <select id="js-public">
-      <option></option>
-      <option>Yes</option>
-      <option>No</option>
+      <option {{isSelected user.public 'null'}} value="null"></option>
+      <option {{isSelected user.public 'yes'}} value="yes">Yes</option>
+      <option {{isSelected user.public 'no'}} value="no">No</option>
     </select>
     <br>
     <button id="js-submit" class="btn btn-info">Update Profile</button>

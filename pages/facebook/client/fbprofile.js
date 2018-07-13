@@ -1,9 +1,19 @@
 Template.fbinfo.helpers({
   user: function(){
     return Profiles.findOne({owner:Meteor.userId()})
-  }
-})
+  },
 
+  isSelected(a,b){
+    if (a==b){
+      return "selected"
+    } else {
+      return ""
+    }
+  },
+
+
+
+})
 
 Template.fbinfo.events({
   "click #js-submit"(event,instance){
@@ -25,15 +35,15 @@ Template.fbinfo.events({
     console.log('just read '+birthplace);
     const gender = instance.$('#js-gender').val();
     console.log('just read '+gender);
-    const public = instance.$('#js-public').val();
-    console.log('just read '+public);
+    const public1 = instance.$('#js-public').val();
+    console.log('just read '+public1);
 
     theProfile.name = name;
     theProfile.bday = bday;
     theProfile.birthplace = birthplace;
     theProfile.gender = gender;
-    theProfile.public = public;
-  
+    theProfile.public = public1;
+
     Profiles.update(theProfile._id,theProfile);
   }
 })
