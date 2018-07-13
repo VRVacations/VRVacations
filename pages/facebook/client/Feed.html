@@ -1,5 +1,13 @@
 <template name="fbtimeline">
-  <h1>Status</h1>
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <style>
+      body {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+      }
+    </style>
+  </head>
   <h1> Your Friends' Posts</h1>
   {{#each p in posts}}
     {{> fbshowpost p=p}}
@@ -10,13 +18,14 @@
 
 <template name="fbshowpost">
   <div class="fb-post">
-    {{p.createdAt}}<br>
-    {{p.name}}<br>
-    <h4>{{p.title}}</h4>
-    {{p.location}}<br>
+  <p><b> Time: </b>   {{p.createdAt}} </p>
+    <p><b> Location: </b>  {{p.location}} </p>
+  <p><b> Author: </b> {{p.name}} </p>
+  <p><b> Title: </b> {{p.title}}  </p>
+ <br>
     <img src={{p.filename}} alt={{p.filename}}>
     <br>
-    {{p.text}}<br>
+    <p><b> Caption: </b> {{p.text}} </p> <br>
 
   </div>
   </template>

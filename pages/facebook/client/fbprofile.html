@@ -1,4 +1,13 @@
 <template name="fbprofile">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <style>
+      body {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+      }
+    </style>
+  </head>
   <h1>Mini-FB Profile</h1>
   {{#if currentUser}}
     {{> fbinfo user=user}}
@@ -10,6 +19,15 @@
 </template>
 
 <template name="fbinfo">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <style>
+      body {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+      }
+    </style>
+  </head>
   Your Full Name:
     <input type="text" id="js-name" value="{{user.name}}">
     <br>
@@ -34,7 +52,7 @@
       <option {{isSelected user.public 'no'}} value="no">No</option>
     </select>
     <br>
-    <button id="js-submit" class="btn btn-info">Update Profile</button>
+    <button id="js-submit" class="btn btn-info" onclick="alert('Your profile has been updated!')">Update Profile</button>
     <br>
     <a href="{{pathFor 'fbmyprofile'}}"><button class="btn btn-info">Go Back</button></a>
 </template>
