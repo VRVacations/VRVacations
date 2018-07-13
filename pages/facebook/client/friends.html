@@ -1,0 +1,33 @@
+<template name="friends">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <style>
+      body {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <h1>Friends</h1>
+  <hr>
+  <table class="table table-bordered table-striped">
+    <tbody>
+      {{#each u in users}}
+        {{> fbperson u=u}}
+      {{/each}}
+    </tbody>
+  </table>
+</template>
+
+<template name="fbperson">
+  <tr>
+    <td>{{u.name}}</td>
+    <td>
+      {{#if isFriend}}
+        <button id="js-defriend" class="btn btn-sm">Defriend</button>
+      {{else}}
+        <button id="js-friend" class="btn btn-sm">Add friend</button>
+      {{/if}}
+    </td>
+  </tr>
+</template>
