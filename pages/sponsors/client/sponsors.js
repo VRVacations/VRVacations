@@ -1,4 +1,4 @@
-const ourSponsors = [
+/*const ourSponsors = [
  {name:"Google",amt:"$50 million",date:"01/01/2018",link:"https://google.com",},
  {name:"Apple",amt:"$20 million",date:"09/04/2017",link:"https://apple.com",},
  {name:"Facebook",amt:"$40 million",date:"05/04/2017",link:"https://facebook.com",},
@@ -28,3 +28,4 @@ Template.sponsors.helpers({
   randomStuff: moreJSON,
   }
 )
+*/

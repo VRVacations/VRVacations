@@ -1,4 +1,4 @@
-Template.userList.helpers({
+/*Template.userList.helpers({
   'users': function () {
 
     return Meteor.users.find();
@@ -30,4 +30,4 @@ Template.userList.events({
     Meteor.call("removeAll");
   },
 
-})
+})*/
