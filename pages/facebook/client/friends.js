@@ -1,10 +1,13 @@
 
-Template.fbusers.helpers({
+Template.friends.helpers({
   users(){return Profiles.find();},
 })
+
+
 Template.fbperson.helpers({
   isFriend(){return Friends.findOne({friend:this.u.owner,owner:Meteor.userId()})}
 })
+
 
 Template.fbperson.events({
   "click #js-friend"(event, instance){
