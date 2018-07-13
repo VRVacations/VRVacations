@@ -8,7 +8,6 @@
       }
     </style>
   </head>
-  <h1>Status</h1>
   <h1> Your Friends' Posts</h1>
   {{#each p in posts}}
     {{> fbshowpost p=p}}
@@ -20,9 +19,10 @@
 <template name="fbshowpost">
   <div class="fb-post">
   <p><b> Time: </b>   {{p.createdAt}} </p>
+    <p><b> Location: </b>  {{p.location}} </p>
   <p><b> Author: </b> {{p.name}} </p>
-  <p><b> Title: </b> </p>  <h4>{{p.title}}</h4> 
-  <p><b> Location: </b>  {{p.location}} </p> <br>
+  <p><b> Title: </b> {{p.title}}  </p>
+ <br>
     <img src={{p.filename}} alt={{p.filename}}>
     <br>
     <p><b> Caption: </b> {{p.text}} </p> <br>
