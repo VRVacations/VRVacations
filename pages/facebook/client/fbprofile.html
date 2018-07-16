@@ -43,13 +43,10 @@
     <input type="text" id="js-interests" value="{{user.interests}}"><br>
     Your Gender:
     <select id="js-gender">
-      <option {{isSelected user.gender 'Enter Gender'}} value="Enter Gender"></option>
       <option {{isSelected user.gender 'Male'}}  value="male">Male</option>
       <option {{isSelected user.gender 'Female'}} value="female">Female</option>
       <option {{isSelected user.gender 'Apache attack helicopter'}} value="Apache Attack Helicopter">Apache attack helicopter</option>
       <option {{isSelected user.gender 'Other'}} value="Other">Other</option>
-
-
     </select>
     <br>
     Let Everyone see my Profile:
