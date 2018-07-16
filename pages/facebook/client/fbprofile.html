@@ -38,7 +38,20 @@
     <input type="text" id="js-birthplace" value="{{user.birthplace}}">
     <br>
     number of pets:
-    <input type="text" id="js-pets" value="{{user.pets}}"><br>
+    <select id="pets">
+      <option {{isSelected user.public 'Null'}} value="null"></option>
+      <option {{isSelected user.public 'One'}} value="One">One</option>
+      <option {{isSelected user.public 'Two'}} value="Two">Two</option>
+      <option {{isSelected user.public 'Three'}} value="Three">Three</option>
+      <option {{isSelected user.public 'Four'}} value="Four">Four</option>
+      <option {{isSelected user.public 'No'}} value="no">No</option>
+      <option {{isSelected user.public 'No'}} value="no">No</option>
+      <option {{isSelected user.public 'No'}} value="no">No</option>
+      <option {{isSelected user.public 'No'}} value="no">No</option>
+      <option {{isSelected user.public 'No'}} value="no">No</option>
+      <option {{isSelected user.public 'No'}} value="no">No</option>
+      <option {{isSelected user.public 'No'}} value="no">No</option>
+    </select>
     Your interests:
     <input type="text" id="js-interests" value="{{user.interests}}"><br>
     Your Gender:
