@@ -37,12 +37,14 @@
     Birthplace:
     <input type="text" id="js-birthplace" value="{{user.birthplace}}">
     <br>
+    number of pets:
+    <input type="text" id="js-pets" value="{{user.pets}}"><br>
     Your Gender:
     <select id="js-gender">
-      <option {{isSelected user.gender 'Null'}} value="null"></option>
+      <option {{isSelected user.gender 'Enter Gender'}} value="Enter Gender"></option>
       <option {{isSelected user.gender 'Male'}}  value="male">Male</option>
       <option {{isSelected user.gender 'Female'}} value="female">Female</option>
-      <option {{isSelected user.gender 'Other'}} value="other">Other</option>
+
     </select>
     <br>
     Let Everyone see my Profile:
