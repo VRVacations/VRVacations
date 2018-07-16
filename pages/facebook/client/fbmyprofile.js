@@ -1,4 +1,4 @@
-Template.fbprofile.helpers({
+Template.fbmyprofile.helpers({
   user(){
     var theProfile = Profiles.findOne({owner:Meteor.userId()});
     if (!theProfile){
@@ -8,6 +8,11 @@ Template.fbprofile.helpers({
     return theProfile
     }
    },
+   name:function() {
+     var theProfile = Profiles.findOne({owner:Meteor.userId()});
+     return theProfile.name
 
+   }
+   
 
 })
