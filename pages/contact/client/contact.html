@@ -8,20 +8,19 @@
       }
     </style>
   </head>
-  
   <div class="jumbotron">
     <h2><strong>Contact us</strong></h2>
-      <p> Have any questions, comments, suggestions, or other inqueries? Fill your information in below and we will get back to you as soon as possible!</p>
+      <p>Have any questions, comments, suggestions, or other inqueries? Fill your information in below and we will get back to you as soon as possible!</p>
   </div>
 
-  <h4><strong>Your Name:</strong></h4>
+  <h4><strong>Your Name*:</strong></h4>
   <input type="text" placeholder="Name" rows="50" id="name">
-<br>
-  <h4><strong>Your Email:</strong></h4>
+
+  <h4><strong>Your Email*:</strong></h4>
   <input type="email" placeholder="Email" rows="50" id="email">
   <h5>Please provide us with an email that we may respond to you on!</h5>
 
-  <h4><strong>Topic:</strong></h4> <select id="topic">
+  <h4><strong>Topic*:</strong></h4> <select id="topic">
   <option value=""></option>
   <option value="tech">Customer Support</option>
   <option value="spam">Spam</option>
@@ -30,10 +29,13 @@
   <option value="othe">Other</option>
 </select>
 <br>
-  <h4><strong>Enter Your Inquiry Below:</strong></h4>
+  <h4><strong>More Specifics? Type Out Your Inquiry Below:</strong></h4>
   <textarea rows="5" cols="100" id="text"></textarea>
 <br>
-  <button id="inquiry" type="button" class="btn btn-lg btn-danger" onclick="alert('Thank you for contacting us. We will be in touch shortly!')">Submit</button>
+  <button id="inquiry" type="button" class="btn btn-lg btn-danger">Submit</button>
+
+<br>
+<br>
 
    <!-- <head>
         <style>
