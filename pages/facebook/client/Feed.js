@@ -8,3 +8,18 @@ Template.fbtimeline.helpers({
   }
 })
 
+Template.fbshowpost.events({
+  "click #deletebutton" (event,instance){
+    Posts.remove(this.p._id);
+  }
+})
+
+Template.fbshowpost.helpers({
+  checker()
+  {
+    userid=Meteor.userId();
+    postid=this.p.owner;
+    return userid==postid;
+
+  }
+})
