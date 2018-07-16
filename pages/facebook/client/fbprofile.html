@@ -31,9 +31,6 @@
   Your Full Name:
     <input type="text" id="js-name" value="{{user.name}}">
     <br>
-  Your Birthdate:
-    <input type="date" id="js-bday" value="{{user.bday}}">
-    <br>
   Location:
     <input type="text" id="js-birthplace" value="{{user.birthplace}}">
     <br>
@@ -69,7 +66,9 @@
   Your Interests or Hobbies:
       <input type="text" id="js-interests" value="{{user.interests}}">
       <br>
-
+      Your Birthdate:
+        <input type="date" id="js-bday" value="{{user.bday}}">
+        <br>
     Let Everyone see my Profile:
     <select id="js-public">
       <option {{isSelected user.public 'Null'}} value="null"></option>
