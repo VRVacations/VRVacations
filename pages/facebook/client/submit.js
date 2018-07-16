@@ -17,10 +17,10 @@ else if (postLocation=="") {
   alert("Please provide a location for your VR!")
 }
     else{
-
+      console.log(Profiles.findOne({owner:Meteor.userId()}));
       var post = {
         owner:Meteor.userId(),
-        name:profile.name,
+        name:Profiles.findOne({owner:Meteor.userId()}).name,
         createdAt: now,
         text: text,
         location: postLocation,
