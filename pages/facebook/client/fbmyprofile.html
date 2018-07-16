@@ -10,9 +10,10 @@
   </head>
   <h1>My Profile</h1>
   {{#if currentUser}}
-    {{> fbinfo user=user}}
+    <!--{{> fbinfo user=user}}-->
   {{else}}
   You have to log in to access this page. Sign up for VR Vacations now to experience VR around the world!
   {{/if}}
+  <a href="{{pathFor 'fbinfo'}}"><button class="btn btn-info">Edit Profile</button></a>
 
 </template>
