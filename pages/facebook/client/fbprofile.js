@@ -36,7 +36,7 @@ Template.fbinfo.events({
     const gender = instance.$('#js-gender').val();
     console.log('just read '+gender);
     const edu = instance.$('#js-edu').val();
-    console.log('just read '+education);
+    console.log('just read '+edu);
     const pets = instance.$('#js-pets').val();
     console.log('just read '+pets);
     const interests = instance.$('#js-interests').val();
@@ -54,5 +54,6 @@ Template.fbinfo.events({
     theProfile.public = public1;
 
     Profiles.update(theProfile._id,theProfile);
+    console.log("Profile updated");
   }
 })
