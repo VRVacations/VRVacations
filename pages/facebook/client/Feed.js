@@ -21,7 +21,6 @@ var vrView = new VRView.Player('#vrview', {
 });
   }
 })
-<<<<<<< HEAD
 
 Template.fbshowpost.events({
   "click #deletebutton" (event,instance){
@@ -38,5 +37,3 @@ Template.fbshowpost.helpers({
 
   }
 })
-=======
->>>>>>> 47a2a1a1846e9216cc42d2f0f3e0b6de06bf3f53
