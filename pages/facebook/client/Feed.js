@@ -5,18 +5,10 @@ Template.fbtimeline.helpers({
     console.dir(myFriendsList);
     return Posts.find({owner:{$in:myFriendsList}},{sort:{createdAt:-1}})
     //return Posts.find();
-    window.addEventListener('load', onVrViewLoad);
 
-    function onVrViewLoad() {
-      // Selector '#vrview' finds element with id 'vrview'.
-      var vrView = new VRView.Player('#vrview', {
-        video: '/url/to/video.mp4',
-        is_stereo: true
-      });
-    }
     // Selector '#vrview' finds element with id 'vrview'.
 var vrView = new VRView.Player('#vrview', {
-  video: '/url/to/video.mp4',
+  image: 'https://i.imgur.com/0cwZyoY.jpg',
   is_stereo: true
 });
   }
