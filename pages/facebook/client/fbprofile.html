@@ -37,26 +37,6 @@
   Location:
     <input type="text" id="js-birthplace" value="{{user.birthplace}}">
     <br>
-    number of pets:
-    <select id="pets">
-      <option {{isSelected user.public 'Null'}} value="null"></option>
-      <option {{isSelected user.public 'Null'}} value="null">Don't Want Pets</option>
-      <option {{isSelected user.public 'Null'}} value="null">Wish I had pets</option>
-      <option {{isSelected user.public 'One'}} value="One">One</option>
-      <option {{isSelected user.public 'Two'}} value="Two">Two</option>
-      <option {{isSelected user.public 'Three'}} value="Three">Three</option>
-      <option {{isSelected user.public 'Four'}} value="Four">Four</option>
-      <option {{isSelected user.public 'Five'}} value="Five">Five</option>
-      <option {{isSelected user.public 'Six'}} value="Six">Six</option>
-      <option {{isSelected user.public 'Seven'}} value="Seven">Seven</option>
-      <option {{isSelected user.public 'Eight'}} value="Eight">Eight</option>
-      <option {{isSelected user.public 'Nine'}} value="Nine">Nine</option>
-      <option {{isSelected user.public 'Ten'}} value="Ten">Ten</option>
-      <option {{isSelected user.public 'Petting Zoo'}} value="Petting Zoo">Petting Zoo</option>
-    </select>
-    <br>
-    Your interests:
-    <input type="text" id="js-interests" value="{{user.interests}}"><br>
     Your Gender:
       <select id="js-gender">
       <option {{isSelected user.gender 'Male'}}  value="male">Male</option>
@@ -69,8 +49,23 @@
       <input type="text" id="js-edu" value="{{user.edu}}">
       <br>
   Number of Pets:
-      <input type="text" id="js-pets" value="{{user.pets}}">
-      <br>
+  <select id="pets">
+    <option {{isSelected user.public 'Null'}} value="null"></option>
+    <option {{isSelected user.public 'Null'}} value="null">Don't Want Pets</option>
+    <option {{isSelected user.public 'Null'}} value="null">Wish I had pets</option>
+    <option {{isSelected user.public 'One'}} value="One">One</option>
+    <option {{isSelected user.public 'Two'}} value="Two">Two</option>
+    <option {{isSelected user.public 'Three'}} value="Three">Three</option>
+    <option {{isSelected user.public 'Four'}} value="Four">Four</option>
+    <option {{isSelected user.public 'Five'}} value="Five">Five</option>
+    <option {{isSelected user.public 'Six'}} value="Six">Six</option>
+    <option {{isSelected user.public 'Seven'}} value="Seven">Seven</option>
+    <option {{isSelected user.public 'Eight'}} value="Eight">Eight</option>
+    <option {{isSelected user.public 'Nine'}} value="Nine">Nine</option>
+    <option {{isSelected user.public 'Ten'}} value="Ten">Ten</option>
+    <option {{isSelected user.public 'Petting Zoo'}} value="Petting Zoo">Petting Zoo</option>
+  </select>
+  <br>
   Your Interests or Hobbies:
       <input type="text" id="js-interests" value="{{user.interests}}">
       <br>
