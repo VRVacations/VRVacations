@@ -6,11 +6,15 @@ Template.fbtimeline.helpers({
     return Posts.find({owner:{$in:myFriendsList}},{sort:{createdAt:-1}})
     //return Posts.find();
 
-    // Selector '#vrview' finds element with id 'vrview'.
-var vrView = new VRView.Player('#vrview', {
-  image: 'https://i.imgur.com/0cwZyoY.jpg',
-  is_stereo: true
-});
+    window.addEventListener('load', onVrViewLoad);
+
+    function onVrViewLoad() {
+      // Selector '#vrview' finds element with id 'vrview'.
+      var vrView = new VRView.Player('#vrview', {
+        image: 'https://i.imgur.com/0cwZyoY.jpg',
+        is_stereo: true
+      });
+    }
   }
 })
 
