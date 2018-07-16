@@ -1,0 +1,11 @@
+<template name = "virtualreality">
+  <input type="hidden" value="{{image}}">
+  <br><br><br><br><br>
+<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+  <a-scene>
+     <a-assets><img crossorigin="anonymous" id="panoramas" src="{{image}}"> 
+     </a-assets>
+     <a-sky src="#panoramas" rotation="0 -90 0"></a-sky>
+   </a-scene>
+
+</template>
