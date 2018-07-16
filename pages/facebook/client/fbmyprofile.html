@@ -10,7 +10,13 @@
   </head>
   <h1>My Profile</h1>
   {{#if currentUser}}
-    <!--{{> fbinfo user=user}}-->
+    Username: {{user.name}}
+    <br>
+    Birthday: {{user.bday}}
+    <br>
+    Location: {{user.birthplace}}
+    <br>
+
   {{else}}
   You have to log in to access this page. Sign up for VR Vacations now to experience VR around the world!
   {{/if}}
