@@ -35,6 +35,12 @@ Template.fbinfo.events({
     console.log('just read '+birthplace);
     const gender = instance.$('#js-gender').val();
     console.log('just read '+gender);
+    const edu = instance.$('#js-edu').val();
+    console.log('just read '+edu);
+    const pets = instance.$('#js-pets').val();
+    console.log('just read '+pets);
+    const interests = instance.$('#js-interests').val();
+    console.log('just read '+interests);
     const public1 = instance.$('#js-public').val();
     console.log('just read '+public1);
 
@@ -42,8 +48,12 @@ Template.fbinfo.events({
     theProfile.bday = bday;
     theProfile.birthplace = birthplace;
     theProfile.gender = gender;
+    theProfile.edu = edu;
+    theProfile.pets = pets;
+    theProfile.interests = interests;
     theProfile.public = public1;
 
     Profiles.update(theProfile._id,theProfile);
+    console.log("Profile updated");
   }
 })
