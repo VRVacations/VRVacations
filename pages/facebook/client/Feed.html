@@ -12,6 +12,7 @@
   {{#each p in posts}}
     {{> fbshowpost p=p}}
   {{/each}}
+  <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 </template>
 
 
@@ -30,7 +31,7 @@
   <p><b> Author: </b> {{p.name}} </p>
   <p><b> Title: </b> {{p.title}}  </p>
  <br>
-    <a href={{p.filename}}><img src={{p.filename}} alt={{p.filename}}></a>
+    <div id='vrview'></div>
     <br>
     <p><b> Caption: </b> {{p.text}} </p> <br>
 
@@ -40,4 +41,18 @@
     {{/if}}
 
   </div>
+
+  <head>
+        <style>
+            html {
+                overflow: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width:600px; background-color:#a0c0a0;">
+
+        </div>
+    </body>
+    
   </template>
