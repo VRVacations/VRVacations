@@ -18,11 +18,17 @@
     <br>
     Gender: {{user.gender}}
     <br>
+    Education: {{user.edu}}
+    <br>
+    Pets: {{user.pets}}
+    <br>
+    Interests: {{user.interests}}
+    <br>
     Public: {{user.public}}
     <br>
+  <a href="{{pathFor 'fbinfo'}}"><button class="btn btn-info">Edit Profile</button></a>
   {{else}}
   You have to log in to access this page. Sign up for VR Vacations now to experience VR around the world!
   {{/if}}
-  <a href="{{pathFor 'fbinfo'}}"><button class="btn btn-info">Edit Profile</button></a>
 
 </template>
