@@ -25,7 +25,13 @@
   <p><b> Author: </b> {{p.name}} </p>
   <p><b> Title: </b> {{p.title}}  </p>
  <br>
- <iframe class='vrview'></iframe>
+  <!--<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+<a-scene>
+   <a-assets><img id="panorama" src="{{p.filename}}"> crossorigin
+   </a-assets>
+   <a-sky src="#panorama" rotation="0 -90 0"></a-sky>
+ </a-scene>-->
+    <a href="image/{{p._id}}"><img width="100%" src="{{p.filename}}"></a>
     <br>
     <p><b> Caption: </b> {{p.text}} </p> <br>
 
