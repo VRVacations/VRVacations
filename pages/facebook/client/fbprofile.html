@@ -42,10 +42,10 @@
     <br>
   Your Gender:
     <select id="js-gender">
-    <option {{isSelected user.gender 'Null'}}  value="null"></option>
-    <option {{isSelected user.gender 'Male'}}  value="male">Male</option>
-    <option {{isSelected user.gender 'Female'}} value="female">Female</option>
-    <option {{isSelected user.gender 'Other'}} value="Other">Other</option>
+    <option {{isSelected user.gender 'null'}}  value="null"></option>
+    <option {{isSelected user.gender 'male'}}  value="male">Male</option>
+    <option {{isSelected user.gender 'female'}} value="female">Female</option>
+    <option {{isSelected user.gender 'other'}} value="other">Other</option>
   </select>
 <br>
   Education
@@ -56,9 +56,9 @@
     <br>
   Let Everyone see my Profile:
   <select id="js-public">
-    <option {{isSelected user.public 'Null'}} value="null"></option>
-    <option {{isSelected user.public 'Yes'}} value="yes">Yes</option>
-    <option {{isSelected user.public 'No'}} value="no">No</option>
+    <option {{isSelected user.public 'null'}} value="null"></option>
+    <option {{isSelected user.public 'yes'}} value="yes">Yes</option>
+    <option {{isSelected user.public 'no'}} value="no">No</option>
   </select>
   <br>
   <button id="js-submit" class="btn btn-info" onclick="alert('Your profile has been updated!')">Update Profile</button>
