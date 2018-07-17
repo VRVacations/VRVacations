@@ -31,35 +31,37 @@
   Your Full Name:
     <input type="text" id="js-name" value="{{user.name}}">
     <br>
-  Location:
+  Your Birthdate:
+    <input type="date" id="js-bday" value="{{user.bday}}">
+    <br>
+  Birthplace:
     <input type="text" id="js-birthplace" value="{{user.birthplace}}">
     <br>
-    Your Gender:
-      <select id="js-gender">
-      <option {{isSelected user.gender 'Null'}}  value="null"></option>
-      <option {{isSelected user.gender 'Male'}}  value="male">Male</option>
-      <option {{isSelected user.gender 'Female'}} value="female">Female</option>
-      <option {{isSelected user.gender 'Other'}} value="Other">Other</option>
-    </select>
+  Current Location:
+    <input type="text" id="js-loc" value="{{user.loc}}">
+    <br>
+  Your Gender:
+    <select id="js-gender">
+    <option {{isSelected user.gender 'Null'}}  value="null"></option>
+    <option {{isSelected user.gender 'Male'}}  value="male">Male</option>
+    <option {{isSelected user.gender 'Female'}} value="female">Female</option>
+    <option {{isSelected user.gender 'Other'}} value="Other">Other</option>
+  </select>
 <br>
   Education
-      <input type="text" id="js-edu" value="{{user.edu}}">
-      <br>
-
+    <input type="text" id="js-edu" value="{{user.edu}}">
+    <br>
   Your Interests or Hobbies:
-      <input type="text" id="js-interests" value="{{user.interests}}">
-      <br>
-      Your Birthdate:
-        <input type="date" id="js-bday" value="{{user.bday}}">
-        <br>
-    Let Everyone see my Profile:
-    <select id="js-public">
-      <option {{isSelected user.public 'Null'}} value="null"></option>
-      <option {{isSelected user.public 'Yes'}} value="yes">Yes</option>
-      <option {{isSelected user.public 'No'}} value="no">No</option>
-    </select>
+    <input type="text" id="js-interests" value="{{user.interests}}">
     <br>
-    <button id="js-submit" class="btn btn-info" onclick="alert('Your profile has been updated!')">Update Profile</button>
-    <br>
-    <a href="{{pathFor 'myprofile'}}"><button class="btn btn-info">Go Back</button></a>
+  Let Everyone see my Profile:
+  <select id="js-public">
+    <option {{isSelected user.public 'Null'}} value="null"></option>
+    <option {{isSelected user.public 'Yes'}} value="yes">Yes</option>
+    <option {{isSelected user.public 'No'}} value="no">No</option>
+  </select>
+  <br>
+  <button id="js-submit" class="btn btn-info" onclick="alert('Your profile has been updated!')">Update Profile</button>
+  <br>
+  <a href="{{pathFor 'myprofile'}}"><button class="btn btn-info">Go Back</button></a>
 </template>
