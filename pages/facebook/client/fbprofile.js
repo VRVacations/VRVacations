@@ -33,12 +33,12 @@ Template.fbinfo.events({
     console.log('just read '+bday);
     const birthplace = instance.$('#js-birthplace').val();
     console.log('just read '+birthplace);
+    const loc = instance.$('#js-loc').val();
+    console.log('just read '+loc);
     const gender = instance.$('#js-gender').val();
     console.log('just read '+gender);
     const edu = instance.$('#js-edu').val();
     console.log('just read '+edu);
-    const pets = instance.$('#js-pets').val();
-    console.log('just read '+pets);
     const interests = instance.$('#js-interests').val();
     console.log('just read '+interests);
     const public1 = instance.$('#js-public').val();
