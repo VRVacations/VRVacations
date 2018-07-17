@@ -47,9 +47,9 @@ Template.fbinfo.events({
     theProfile.name = name;
     theProfile.bday = bday;
     theProfile.birthplace = birthplace;
+    theProfile.loc = loc;
     theProfile.gender = gender;
     theProfile.edu = edu;
-    theProfile.pets = pets;
     theProfile.interests = interests;
     theProfile.public = public1;
 
