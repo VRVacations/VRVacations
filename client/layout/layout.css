@@ -1,3 +1,6 @@
 .navbar-format
 {padding-left:45px;
 }
+body {
+  overflow: auto;
+}
