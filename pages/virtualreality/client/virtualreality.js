@@ -21,11 +21,11 @@ var KEYS = [
  */
 module.exports.Component = registerComponent('wasd-controls', {
   schema: {
-    acceleration: {default: 150},
+    acceleration: {default: 65},
     adAxis: {default: 'x', oneOf: ['x', 'y', 'z']},
     adEnabled: {default: true},
     adInverted: {default: false},
-    easing: {default: 100},
+    easing: {default: 20},
     enabled: {default: true},
     fly: {default: false},
     wsAxis: {default: 'z', oneOf: ['x', 'y', 'z']},

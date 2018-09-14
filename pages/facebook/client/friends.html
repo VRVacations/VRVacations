@@ -1,4 +1,6 @@
+
 <template name="friends">
+  {{#if currentUser}}
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
     <style>
@@ -25,9 +27,22 @@
       {{/each}}
     </tbody>
   </table>
+  {{else}}
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <style>
+      body {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  You have to log in to access this page. Sign up for VR Vacations now to experience VR around the world!
+  {{/if}}
 </template>
 
 <template name="person">
+  {{#if currentUser}}
   <tr>
     <td>{{u.name}}</td>
     <td>{{u.bday}}</td>
@@ -42,4 +57,8 @@
       {{/if}}
     </td>
   </tr>
+
+  {{else}}
+  You have to log in to access this page. Sign up for VR Vacations now to experience VR around the world!
+  {{/if}}
 </template>

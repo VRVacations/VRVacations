@@ -34,4 +34,6 @@ Template.person.events({
     Friends.remove(z._id);
   },
 
+
+   
 })

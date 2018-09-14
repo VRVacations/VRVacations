@@ -3,18 +3,33 @@
        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
        <style>          body{ font-family: 'Quicksand', sans-serif;
          font-size: 20px;
+         overflow: scroll;
        }
        </style>
+       <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
      </head>
   <h1>Experience the Future with VR Vacations</h1>
   <h3>Here is an example of what can be done with VR</h3>
   <br>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/wfNvZwN87Hg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
   <h6>This video is in no ways ours and will not be used without recognition to the publisher, VIEMR.</h6>
+  <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+  <br>
+     <body>
+       <div id="myEmbeddedScene">
+         <a-scene embedded>
+            <a-assets><img crossorigin="anonymous" id="panoramas" src="demo3.jpg" alt="city">
+            </a-assets>
+            <a-camera wasd-controls
+               position="0 0 0"
+               cursor-visible="true"
+               cursor-scale="20"
+               cursor-color="#000000"
+               cursor-opacity="0.5">
+            </a-camera>
+            <a-sky src="#panoramas" rotation="0 -90 0"></a-sky>
+          </a-scene>
+        </div>
+     </body>
 </template>

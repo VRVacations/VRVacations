@@ -1,7 +1,10 @@
 <template name = "virtualreality">
+<head>
   <input type="hidden" value="{{image}}">
   <br><br><br><br><br>
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+</head>
+<body>
   <a-scene>
      <a-assets><img crossorigin="anonymous" id="panoramas" src="{{image}}">
      </a-assets>
@@ -12,7 +15,7 @@
         cursor-color="#0095DD"
         cursor-opacity="0.5">
      </a-camera>
-     <a-sky src="#panoramas" rotation="0 -90 0"></a-sky>
+     <a-sky src="#panoramas" rotation="0 -90 0" wasd-controls="true"></a-sky>
    </a-scene>
-
+</body>
 </template>
